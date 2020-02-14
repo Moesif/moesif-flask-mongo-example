@@ -1,6 +1,6 @@
 """This module will encode and parse the query string params."""
 
-from urlparse import parse_qs
+from urllib.parse import parse_qs
 
 
 def parse_query_params(query_string):

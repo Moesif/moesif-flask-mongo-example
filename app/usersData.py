@@ -6,11 +6,11 @@ from bson.json_util import dumps
 from flask import request, jsonify
 import json
 import ast
-import imp
+from importlib.machinery import SourceFileLoader
 
 
 # Import the helpers module
-helper_module = imp.load_source('*', './app/helpers.py')
+helper_module = SourceFileLoader('*', './app/helpers.py').load_module()
 
 # Select the database
 db = client.restfulapi

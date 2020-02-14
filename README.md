@@ -16,7 +16,7 @@ to keep all the project's dependencies isolated from other projects.*
 ##### Create your local environment
 
 ```bash
-conda create -n restfulapi python=2.7 anaconda # Create the environment
+conda create -n restfulapi python=3.7 anaconda # Create the environment
 source activate restfulapi # Activate the environment
 ```
 
