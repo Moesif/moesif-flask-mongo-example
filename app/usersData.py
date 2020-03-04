@@ -89,7 +89,7 @@ def fetch_users():
         # If dictionary is empty
         else:
             # Return all the records as query string parameters are not available
-            if collection.find().count > 0:
+            if collection.find().count() > 0:
                 # Prepare response if the users are found
                 return dumps(collection.find())
             else:
