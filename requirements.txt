@@ -1,2 +1,2 @@
 pymongo==3.9.0
-flask==1.1.1
+flask==2.3.2
